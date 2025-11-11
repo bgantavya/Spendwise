@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 8000;
 
 // Middleware
 app.use(cors({
-    origin: process.env.NODE_ENV === 'production' ? 'https://yourproductiondomain.com' : 'http://localhost:3000',
+    origin: process.env.NODE_ENV === 'production' ? 'https://frontend-sgi3.onrender.com' : 'http://localhost:3000',
     credentials: true
 }));
 app.use(express.json());
@@ -65,4 +65,5 @@ app.listen(PORT, ()=>{
     connectdb()
     console.log(`Server running on http://localhost:${PORT}`);
 });
+
 
